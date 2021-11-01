@@ -1,0 +1,27 @@
+<script>
+    var altura = prompt("Digite sua altura em metros");
+    var peso = prompt("Digite seu peso em Kg");
+
+    var imc = peso / (altura * altura);
+
+    imc2 = imc.toFixed(1);
+    alert("O IMC é:" + imc2);
+
+    if(imc2 < 18.5)
+        
+            alert (" Abaixo do peso");
+            
+    else if(imc2 <= 24.9)
+            alert("Peso Normal");
+            
+    else if(imc2 <= 29.9)
+            alert("Sobrepeso");
+            
+    else if(imc2 <= 34.9)
+            alert("Obesidade grau 1");
+    else if(imc2 <= 39.9)
+            alert("Obesidade grau 2");
+    else
+        alert("Obesidade grau 3");
+    
+</script>
